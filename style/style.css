@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 450px) {
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  body .container img {
+    width: 50vw;
+    height: auto;
+  }
+  body .container .facebook {
+    width: 50vw;
+    height: 17vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: absolute;
+    margin-left: 2.5vw;
+  }
+  body .container .facebook iframe {
+    width: 30vw;
+    height: 30px;
+    border: none;
+    overflow: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */
