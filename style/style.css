@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 501px) {
   body .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13,13 +13,19 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-top: 20px;
   }
   body .container img {
     width: 50vw;
     height: auto;
   }
   body .container .facebook {
-    width: 50vw;
+    width: 47.5vw;
     height: 17vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35,6 +41,44 @@
   }
   body .container .facebook iframe {
     width: 30vw;
+    height: 30px;
+    border: none;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  body .container img {
+    width: 100vw;
+    height: auto;
+  }
+  body .container .facebook {
+    width: 100vw;
+    height: 35vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: absolute;
+    margin-left: 2.5vw;
+  }
+  body .container .facebook iframe {
+    width: 60vw;
     height: 30px;
     border: none;
     overflow: hidden;
